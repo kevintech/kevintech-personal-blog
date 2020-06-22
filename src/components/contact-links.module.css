@@ -1,0 +1,21 @@
+.contact_links {
+  list-style: none;
+  margin: 0 0 1.58rem;
+}
+
+.contact_links li {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+}
+
+.contact_links li::after {
+  content: ' ]'
+}
+
+.contact_links li::before {
+  content: '[ '
+}
+
+.contact_links li > a {
+  color: inherit;
+}

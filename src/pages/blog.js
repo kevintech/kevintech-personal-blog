@@ -10,12 +10,12 @@ import Button from "../components/button"
 class Blog extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    const siteTitle = data.site.siteMetadata.blogTitle
     const posts = data.allMdx.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Blog" />
         <Bio />
         <div style={{ margin: "20px 0 40px" }}>
           {posts.map(({ node }) => {
@@ -59,6 +59,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        blogTitle
       }
     }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {

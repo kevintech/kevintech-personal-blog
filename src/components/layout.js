@@ -1,17 +1,51 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-
 import { rhythm, scale } from "../utils/typography"
+
+import ProfilePicture from "../components/profile-picture"
 
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
 
-    if (location.pathname === rootPath || location.pathname === blogPath) {
+    if ( location.pathname === rootPath ) {
+      header = (
+        <div>
+          <div style={{ height: `200px`, margin: `0 auto 1.45rem`, width: `200px` }}>
+            <ProfilePicture />
+          </div>
+          <h1
+            style={{
+              ...scale(1.5),
+              borderBottom: `none`,
+              margin: 0,
+            }}
+          >
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to="/"
+            >
+              {title}
+            </Link>
+          </h1>
+          <h2
+            style={{
+              borderBottom: `none`,
+              marginTop: 0,
+              marginBottom: rhythm(1.5),
+            }}>
+            Software Engineer
+          </h2>
+        </div>
+      )
+    } else {
       header = (
         <h1
           style={{
@@ -26,31 +60,11 @@ class Layout extends React.Component {
               textDecoration: `none`,
               color: `inherit`,
             }}
-            to={location.pathname === blogPath ? `/blog/` : `/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
             to={`/blog/`}
           >
             {title}
           </Link>
-        </h3>
+        </h1>
       )
     }
     return (
@@ -67,9 +81,11 @@ class Layout extends React.Component {
           <main>{children}</main>
         </div>
         <Footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()} Kevin Herrarte, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
+          {` `}
+          <span role="img" aria-label="love emoji">❤️</span>
         </Footer>
       </Wrapper>
     )

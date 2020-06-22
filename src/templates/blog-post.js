@@ -10,7 +10,7 @@ import { rhythm, scale } from "../utils/typography"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const siteTitle = this.props.data.site.siteMetadata.blogTitle
     const { previous, next } = this.props.pageContext
 
     return (
@@ -74,6 +74,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        blogTitle
         author
       }
     }

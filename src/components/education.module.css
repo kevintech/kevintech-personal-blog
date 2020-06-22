@@ -1,0 +1,33 @@
+.education {
+  list-style: none;
+  margin: 1.58rem 0;
+}
+
+.education li > .education__certificates {
+  display: block;
+  text-align: justify;
+}
+
+.education li > .education__certificates > a,
+.education li > .education__certificates > a:visited {
+  color: #209CEE;
+  margin: 0 0.75em 0 0;
+}
+
+.education li > .education__certificates > a::after {
+  content: ',';
+}
+
+.education li > .education__date {
+  color: #999999;
+  display: block;
+}
+
+.education li > .education__entity {
+  display: block;
+}
+
+.education li > .education__title {
+  display: block;
+  font-weight: bold;
+}
