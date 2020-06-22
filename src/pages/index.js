@@ -1,36 +1,37 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
+// import Button from "../components/button"
+import Skills from "../components/skills"
+import WorkExperience from "../components/work-experience"
+import ContactLinks from "../components/contact-links"
+import Education from "../components/education"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Gatsby Starter Personal Website"
+    const siteTitle = "Kevin Herrarte"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="Home"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          title="Hello World"
+          keywords={[`kevintech`, `c#`, `javascript`, `react`, `gatsby`, `oracle apex`, `software engineer`, `guatemala`]}
         />
-        <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
-        <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
-        </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
-        <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
+        <p style={{textAlign: `justify`}}>
+          Currently an Oracle Application Express Developer at Kire Technologies.
+          Offering 10+ years of experience in the full software development lifecycle, 
+          from concept through delivery of web and mobile oriented solutions. Expert in advanced methodologies, 
+          tools and processes contributing to the design and rollout of software applications.
         </p>
-        <p>Now go build something great!</p>
-        <Link to="/blog/">
+        <ContactLinks />
+        <Skills />
+        <WorkExperience />
+        <Education />
+        {/* <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
-        </Link>
+        </Link> */}
       </Layout>
     )
   }

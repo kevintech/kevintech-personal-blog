@@ -1,12 +1,15 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Gatsby`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Kevin Herrarte ~ Full-stack Software Engineer`,
+    blogTitle: `KevinTech's Blog`,
+    author: `Kevin Herrarte`,
+    description: `Software Engineer with strong skills on back end and front end, focused on building beautiful interfaces and experiences.`,
+    siteUrl: `https://kevintech.ninja/`,
     social: {
-      twitter: `gatsbyjs`,
+      facebook: `kevintech`,
+      instagram: `kevin_tech`,
+      twitter: `kevin_tech`,
     },
   },
   plugins: [
@@ -71,14 +74,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `KevinTech's Blog`,
+        short_name: `KevinTech`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#111`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/photo-bnw.png`,
       },
     },
     {
