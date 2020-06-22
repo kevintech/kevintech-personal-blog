@@ -60,6 +60,7 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
+          instagram
           twitter
         }
       }

@@ -9,7 +9,7 @@ function ContactLinks() {
         <a href="mailto:hello@kevintech.ninja">hello@kevintech.ninja</a>
       </li>
       <li>
-        <a href="https://linkedin.con/in/kherrarte" target="_blank">LinkedIn</a>
+        <a href="https://linkedin.com/in/kherrarte" target="_blank">LinkedIn</a>
       </li>
       <li>
         <a href="https://github.com/kevintech" target="_blank">GitHub</a>
