@@ -20,7 +20,8 @@ class IndexPage extends React.Component {
           keywords={[`kevintech`, `c#`, `javascript`, `react`, `gatsby`, `oracle apex`, `software engineer`, `guatemala`]}
         />
         <p style={{textAlign: `justify`}}>
-          Currently an Oracle Application Express Developer at Kire Technologies.
+          Currently an Oracle Application Express Developer at 
+          <a href="https://viscosityna.com/" target="_blank" rel="external">Viscosity North America</a>. 
           Offering 10+ years of experience in the full software development lifecycle, 
           from concept through delivery of web and mobile oriented solutions. Expert in advanced methodologies, 
           tools and processes contributing to the design and rollout of software applications.
