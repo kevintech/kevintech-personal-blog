@@ -11,7 +11,7 @@ function WorkExperience() {
             Oct 2018 - Present
           </span>
           <span className={styles.work_experience__company}>
-            Kire Technologies
+            Viscosity North America
           </span>
           <span className={styles.work_experience__position}>
             Software Engineer
