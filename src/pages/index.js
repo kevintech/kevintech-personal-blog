@@ -17,11 +17,13 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Hello World"
-          keywords={[`kevintech`, `c#`, `javascript`, `react`, `gatsby`, `oracle apex`, `software engineer`, `guatemala`]}
+          keywords={[`kevintech`, `c#`, `javascript`, `react`, `react-native`, `plsql`, `oracle apex`, `software engineer`, `guatemala`]}
         />
         <p style={{textAlign: `justify`}}>
-          Currently an Oracle Application Express Developer at 
-          <a href="https://viscosityna.com/" target="_blank" rel="external">Viscosity North America</a>. 
+          Currently an Oracle Application Express Developer at
+          {` `}
+          <a href="https://viscosityna.com/" target="_blank" rel="external">Viscosity North America</a>.
+          {` `}
           Offering 10+ years of experience in the full software development lifecycle, 
           from concept through delivery of web and mobile oriented solutions. Expert in advanced methodologies, 
           tools and processes contributing to the design and rollout of software applications.

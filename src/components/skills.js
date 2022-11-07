@@ -6,12 +6,13 @@ function Skills() {
     <div>
       <h2>Skills</h2>
       <ul className={styles.skills}>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>React Native</li>
         <li>HTML5</li>
         <li>CSS</li>
         <li>Sass</li>
-        <li>JavaScript (ES6)</li>
-        <li>TypeScript</li>
-        <li>React</li>
         <li>Angular</li>
         <li>JQuery</li>
         <li>C#</li>
@@ -19,6 +20,7 @@ function Skills() {
         <li>NodeJS</li>
         <li>ExpressJS</li>
         <li>Oracle Application Express</li>
+        <li>PL/SQL</li>
         <li>Java</li>
         <li>Spring Framework</li>
         <li>MySQL / MariaDB</li>
